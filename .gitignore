@@ -1,0 +1,59 @@
+# ======================
+# Python / FastAPI
+# ======================
+
+# Bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.env
+
+# Logs
+*.log
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# ======================
+# Node / React (Vite)
+# ======================
+
+# Dependencies
+frontend/node_modules/
+
+# Production build
+frontend/dist/
+frontend/build/
+
+# Environment variables
+frontend/.env
+frontend/.env.local
+frontend/.env.development
+frontend/.env.test
+frontend/.env.production
+
+# Logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# Vite cache
+frontend/.vite/
+
+# OS / System files
+.DS_Store
+Thumbs.db
+
+# ======================
+# Optional: Coverage / Testing
+# ======================
+htmlcov/
+.coverage
+*.cover
