@@ -22,9 +22,33 @@ def get_product_by_id(id:int):
         if product.id == id:
             return product
     return {"error":"Product not found"}
+
+
 @app.post("/product")
 def add_product(product:Products):
     products.append(product)
-    return product
+    return product 
+
+@app.put("/product")
+def update_proudct(id:int,product:Products):
+        for i in range(len(products)):
+                        
+            if products[i].id==id:            
+                products[i]=product
+                return "Product updated succesfully"
+        return "No Product found"   
+    
+    
+    
+    
+@app.delete("/product")
+def delete_product(id:int,product:Products):
+    for i in range(len(products)):
+        if products[i].id == id:
+            del products[i]
+            return "Product deleted successfully"
+    return "No Product found"    
+
+    
     
     
